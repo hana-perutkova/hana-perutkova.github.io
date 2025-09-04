@@ -256,7 +256,7 @@
             <h3>Rychlý kontakt</h3>
             <p>
               <strong>Telefon:</strong> <a href="tel:+420123456789">+420 123 456 789</a><br />
-              <strong>E‑mail:</strong> <a href="mailto:vas-email@example.com">vas-email@example.com</a>
+              <strong>E‑mail:</strong> <a href="vas-email@example.com">vas-email@example.com</a>
             </p>
             <p class="muted">Region / Kraj • IČO 12345678</p>
           </div>
@@ -315,7 +315,7 @@
       const data = new FormData(form);
       const subject = encodeURIComponent('Poptávka: ' + (data.get('Služba') || 'Služba'));
       const body = [...data.entries()].map(([k,v]) => `${k}: ${v}`).join('%0D%0A');
-      form.action = `mailto:vas-email@example.com?subject=${subject}&body=${body}`;
+      //form.action = `mailto:vas-email@example.com?subject=${subject}&body=${body}`;
     });
 
     // Fokus styl pro vstupy
