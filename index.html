@@ -3,29 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hana Perutková – Služby</title>
-  <meta name="description" content="Fyzioterapie koní, přeprava koní a výuka nastupování. Profesionální péče s respektem ke zvířeti." />
+  
+  <title>Hana Perutková | Ošetření pohybového aparátu a přeprava koní</title>
+  
+  <meta name="description" content="Profesionální ošetření a fyzioterapie koní v Libereckém kraji. Hana Perutková zajišťuje bezpečnou přepravu koní a nápravu nastupování s respektem ke zvířeti." />
+  
   <meta name="color-scheme" content="light dark" />
-  <meta property="og:title" content="Hana Perutková – Služby" />
-  <meta property="og:description" content="Fyzioterapie koní, převoz koní a další služby." />
+  <meta property="og:title" content="Hana Perutková – Služby pro koně" />
+  <meta property="og:description" content="Odborné ošetření, transport koní a výuka nastupování." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:image" content="https://hanaperutkova.cz/og-image.jpg" />
   <meta name="theme-color" content="#4ECDC4" />
   <link rel="icon" href="favicon.svg" />
   <link rel="stylesheet" href="assets/css/themes.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+
   <script type="application/ld+json">
     {
       "@context":"https://schema.org",
-      "@type":"Person",
+      "@type":"ProfessionalService",
       "name":"Hana Perutková",
-      "url":"https://moje-domena.cz",
-      "image":"https://moje-domena.cz/og-image.jpg",
+      "url":"https://hanaperutkova.cz",
+      "image":"https://hanaperutkova.cz/public/hana-fotky-web/Hana.png",
       "jobTitle":"Fyzioterapeutka koní, přeprava koní",
-      "sameAs":["https://www.instagram.com/tvoje_handle","https://www.facebook.com/tvoje_handle"],
-      "knowsAbout":["equine physiotherapy","horse transport"],
-      "address":{"@type":"PostalAddress","addressLocality":"Region / Kraj"}
+      "description": "Fyzioterapie koní, ošetření pohybového aparátu a profesionální přeprava koní. Certifikovaná péče CertCAAPR v Libereckém kraji.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Komenského 46",
+        "addressLocality": "Mimoň",
+        "postalCode": "471 24",
+        "addressRegion": "Liberecký kraj"
+      },
+      "knowsAbout":["equine physiotherapy", "fyzioterapie koní", "rehabilitace koní", "přeprava koní", "horsemanship"],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Asociace fyzioterapie a rehabilitace zvířat ČR"
+      }
     }
   </script>
 </head>
@@ -52,10 +66,7 @@
           <div class="dropdown-menu">
             <a href="./#sluzby" class="dropdown-item dropdown-overview">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="3" y="3" width="7" height="7"/>
-                <rect x="14" y="3" width="7" height="7"/>
-                <rect x="3" y="14" width="7" height="7"/>
-                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
               </svg>
               <span>Přehled služeb</span>
             </a>
@@ -64,7 +75,7 @@
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                 <path d="M3.22 12h3.59l2.08-4.37 2.11 8.74 2.11-4.37h3.67"/>
               </svg>
-              <span>Ošetření pohybového aparátu koní</span>
+              <span>Ošetření pohybového aparátu</span>
             </a>
             <a href="preprava-koni" class="dropdown-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -77,31 +88,18 @@
                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                 <path d="M6 12v5c3 3 9 3 12 0v-5"/>
               </svg>
-              <span>Výuka nastupování problémových koní</span>
+              <span>Výuka nastupování</span>
             </a>
           </div>
         </div>
         <a href="./#o-mne" class="nav-link">O mně</a>
         <a href="./#kontakt" class="nav-link">Kontakt</a>
       </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Otevřít menu" title="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Zavřít menu" title="Zavřít">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <button id="theme-toggle" aria-label="Přepnout tmavý/světlý režim" title="Přepnout tmavý/světlý režim">
-        <svg id="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
-          <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <svg id="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Otevřít menu"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger" aria-label="Zavřít menu"><span></span><span></span><span></span></button>
+      <button id="theme-toggle" aria-label="Přepnout tmavý/světlý režim">
+        <svg id="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+        <svg id="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
   </header>
@@ -112,23 +110,13 @@
       <div class="hero-overlay"></div>
       <div class="container hero-container">
         <div class="hero-content">
-          <h1 class="hero-title">Mé služby, váš spokojený kůň</h1>
+          <h1 class="hero-title">Ošetření a bezpečná přeprava koní</h1>
           <p class="lead hero-text">
-            Každý kůň je osobnost. Má svůj příběh, svou povahu i své tempo. Věřím, že klid, trpělivost a porozumění jsou základem skutečné spolupráce mezi člověkem a koněm. Vše, co dělám, vychází z respektu, klidu a lásky ke koním — protože spokojený kůň je tím nejlepším důkazem správné životní cesty.
+            Každý kůň je osobnost. Má svůj příběh, svou povahu i své tempo. Věřím, že klid, trpělivost a porozumění jsou základem skutečné spolupráce mezi člověkem a koněm. Vše, co dělám, vychází z respektu a lásky ke koním.
           </p>
           <div class="cta">
-            <a class="btn btn-primary" href="#sluzby">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              Prohlédnout služby
-            </a>
-            <a class="btn btn-outline hero-btn-outline" href="#kontakt">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              Zavolat / napsat
-            </a>
+            <a class="btn btn-primary" href="#sluzby">Prohlédnout služby</a>
+            <a class="btn btn-outline hero-btn-outline" href="#kontakt">Zavolat / napsat</a>
           </div>
         </div>
       </div>
@@ -139,71 +127,61 @@
         <h2>Služby</h2>
         <div class="grid" role="list">
 
-          <!-- Ošetření pohybového aparátu koní -->
           <article class="card" role="listitem" data-href="osetreni-koni" style="position: relative;">
-            <div style="position: absolute; top: 18px; right: 18px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in oklab, var(--brand) 10%, transparent);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" aria-hidden="true" width="28" height="28">
+            <div class="service-icon" style="position: absolute; top: 18px; right: 18px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in oklab, var(--brand) 10%, transparent);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" width="28" height="28">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                 <path d="M3.22 12h3.59l2.08-4.37 2.11 8.74 2.11-4.37h3.67"/>
               </svg>
             </div>
-            <h3>Ošetření pohybového aparátu koní</h3>
-            <p>Ošetření koní pro zlepšení fyzické a psychické kondice, prevenci zranění, rehabilitaci po zranění a zvýšení výkonu koní.</p>
+            <h3>Ošetření pohybového aparátu</h3>
+            <p>Péče zaměřená na fyzickou kondici, prevenci zranění a celkovou regeneraci koní pod záštitou CertCAAPR.</p>
             <ul class="muted">
-              <li>Individuální přístup ke každému koni</li>
-              <li>Masáž, strečink, mobilizace, kinesiotaping</li>
-              <li>Kontrola sedla a instruktáž majitele</li>
-              <li><strong>Ceník: 2000 Kč za koně</strong> (cestovné v ceně)</li>
+              <li>Individuální přístup a manuální terapie</li>
+              <li>Masáž, strečink, mobilizace a kinesiotaping</li>
+              <li>Kontrola sedla a poradenství pro majitele</li>
+              <li><strong>Ceník: 2000 Kč za koně</strong></li>
             </ul>
             <div class="cta">
               <a class="btn btn-primary" href="osetreni-koni">Více informací</a>
-              <a class="btn btn-outline" href="./#kontakt">Kontaktovat</a>
             </div>
           </article>
 
-          <!-- Profesionální přeprava koní -->
           <article class="card" role="listitem" data-href="preprava-koni" style="position: relative;">
-            <div style="position: absolute; top: 18px; right: 18px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in oklab, var(--brand) 10%, transparent);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" aria-hidden="true" width="28" height="28">
+            <div class="service-icon" style="position: absolute; top: 18px; right: 18px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in oklab, var(--brand) 10%, transparent);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" width="28" height="28">
                 <path d="M3 7h11l4 4h3v6h-2m-2 0a2 2 0 11-4 0m-6 0a2 2 0 11-4 0"/>
               </svg>
             </div>
             <h3>Profesionální přeprava koní</h3>
-            <p>Bezpečně, pohodlně a klidně, jak pro vaše koně, tak i pro vás jako majitele. Nissan Pathfinder 4x4 + dvoumístný přívěs s kamerovým systémem.</p>
+            <p>Bezpečný a klidný převoz koní. Nissan Pathfinder 4x4 + dvoumístný přívěs s kamerovým systémem a registrací dopravce.</p>
             <ul class="muted">
-              <li>Protiskluzové podlahy, panic systém</li>
-              <li>Registrace: CZ 51D10045</li>
-              <li><strong>Ceník: 18 Kč/km</strong> (vč. přístavných km)</li>
-              <li>Čekací doba: 200 Kč/h | Nakládání: 300 Kč/h</li>
+              <li>Registrace dopravce: CZ 51D10045</li>
+              <li>Nissan Pathfinder + moderní přívěs</li>
+              <li><strong>Ceník: 18 Kč/km</strong></li>
             </ul>
             <div class="cta">
               <a class="btn btn-primary" href="preprava-koni">Více informací</a>
-              <a class="btn btn-outline" href="./#kontakt">Kontaktovat</a>
             </div>
           </article>
 
-          <!-- Výuka nastupování problémových koní -->
           <article class="card" role="listitem" data-href="vyuka-nastupovani" style="position: relative;">
-            <div style="position: absolute; top: 18px; right: 18px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in oklab, var(--brand) 10%, transparent);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" aria-hidden="true" width="28" height="28">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <div class="service-icon" style="position: absolute; top: 18px; right: 18px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in oklab, var(--brand) 10%, transparent);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" width="28" height="28">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
               </svg>
             </div>
-            <h3>Výuka nastupování problémových koní</h3>
-            <p>Naučím vašeho koně ochotně a rychle nastupovat, ať máte jistotu i v krizových situacích – akutní převoz na kliniku.</p>
+            <h3>Výuka nastupování</h3>
+            <p>Nácvik klidného nakládání koní bez stresu. Naučím vašeho koně ochotně nastupovat pro klidné cesty na závody i kliniku.</p>
             <ul class="muted">
-              <li>Nácvik bez časového tlaku</li>
-              <li>Můžu přijet s vlastním nebo využijeme váš přívěs</li>
-              <li>Asistence majiteli nebo samostatná práce</li>
-              <li><strong>Ceník:</strong> Individuální domluva + doprava</li>
+              <li>Nácvik bez časového tlaku a násilí</li>
+              <li>Práce s problémovými koňmi</li>
+              <li>Asistence přímo u vás ve stáji</li>
             </ul>
             <div class="cta">
               <a class="btn btn-primary" href="vyuka-nastupovani">Více informací</a>
-              <a class="btn btn-outline" href="./#kontakt">Kontaktovat</a>
             </div>
           </article>
-
         </div>
       </div>
     </section>
@@ -212,92 +190,39 @@
       <div class="container">
         <h2>O mně</h2>
         <div class="about-grid">
-          <!-- Left: Text content and timeline -->
           <div class="about-left">
             <div class="about-text">
               <p>
-                Jmenuji se Hana Perutková, bydlím blízko České Lípy (Liberecký kraj). Kolem koní se pohybuji přes 10 let, postupem času jsem získala a stále získávám spoustu cenných zkušeností s nejrůznějšími typy koní a jejich výcvikem. Neustále se vzdělávám v oborech týkajících se koní.
+                Jmenuji se Hana Perutková, bydlím blízko České Lípy. Kolem koní se pohybuji přes 10 let a neustále se vzdělávám v oborech, které přispívají k jejich fyzické i psychické pohodě.
               </p>
               <p>
-                Ošetření pohybového aparátu koní se věnuji od roku 2025, kdy jsem úspěšně složila zkoušky pod Asociací fyzioterapie a rehabilitace zvířat České republiky, čímž jsem získala titul <strong>CertCAAPR</strong>. Přepravou koní se zabývám od roku 2024, kdy jsem získala všechna potřebná oprávnění (registrace: <strong>CZ 51D10045</strong>). Při přepravě vždy dbám především na komfort vašich koní.
+                Ošetření pohybového aparátu a regeneraci koní se věnuji profesionálně od roku 2025, kdy jsem úspěšně složila zkoušky pod Asociací fyzioterapie a rehabilitace zvířat ČR (získaný titul <strong>CertCAAPR</strong>). Při své práci kladu důraz na individuální potřeby každého zvířete.
               </p>
             </div>
-            
             <div class="about-timeline">
               <h3 style="margin-top: 2rem;">Vzdělání a certifikace</h3>
-              
               <div style="margin-top: 1rem;">
                 <p><strong>2025</strong></p>
                 <ul class="muted">
-                  <li>Kurz Fyzioterapie a rehabilitace koní pod Asociací fyzioterapie a rehabilitace zvířat ČR, titul CertCAAPR</li>
+                  <li>Kurz ošetření a rehabilitace koní (Asociace fyzioterapie a rehabilitace zvířat ČR), titul CertCAAPR</li>
                   <li>Praxe v Centru rehabilitace koní Kolesa</li>
-                  <li>Praxe s Mvdr. Eliškou Punčochářovou PhD.</li>
-                </ul>
-              </div>
-              
-              <div style="margin-top: 1rem;">
-                <p><strong>2024</strong></p>
-                <ul class="muted">
-                  <li>Školení MLS laserová terapie u koní</li>
-                  <li>Kurz pro dopravce přepravující zvířata</li>
-                  <li>Kurz bezpečné přepravy a nakládání koní</li>
-                  <li>Kurz manipulace s koňmi v krizových situacích</li>
-                </ul>
-              </div>
-              
-              <div style="margin-top: 1rem;">
-                <p><strong>2023</strong></p>
-                <ul class="muted">
-                  <li>Získání ZZVJ licence</li>
-                  <li>Kurz lepení podkov Goodsmith a pasování bot Goodsmith</li>
-                </ul>
-              </div>
-              
-              <div style="margin-top: 1rem;">
-                <p><strong>2022</strong></p>
-                <ul class="muted">
-                  <li>Kurz Výživa koní - Ing. Monika Mechová</li>
-                  <li>Kurz lepení podkov Turfcord</li>
                 </ul>
               </div>
             </div>
           </div>
-          
-          <!-- Right: Photo and Carousel stacked (constrained to half page) -->
           <div class="about-photos">
-            <!-- Photo -->
             <div class="about-photo-item" style="position: relative; margin-bottom: 2rem;">
-              <img src="public/hana-fotky-web/Hana.png" alt="Hana Perutková" style="width: 100%; object-fit: contain; border-radius: 20px; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.2);">
+              <img src="public/hana-fotky-web/Hana.png" alt="Hana Perutková - fyzioterapie koní a ošetření pohybového aparátu v Libereckém kraji" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.2);">
             </div>
-            
-            <!-- Certificate Carousel -->
-            <div class="about-carousel-item" style="position: relative; background: var(--card); border-radius: 12px; padding: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <div class="about-carousel-item" style="background: var(--card); border-radius: 12px; padding: 1rem;">
               <p style="text-align: center; margin-bottom: 1rem; font-weight: 600;">Certifikáty</p>
-              
-              <!-- Carousel Container -->
               <div id="cert-carousel" style="position: relative; overflow: hidden; border-radius: 8px;">
                 <div id="cert-track" style="display: flex; transition: transform 0.4s ease;">
-                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/certCAAPR.jpg" alt="CertCAAPR" style="min-width: 100%; height: 300px; object-fit: contain;">
-                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/goodsmith.jpg" alt="Goodsmith" style="min-width: 100%; height: 300px; object-fit: contain;">
-                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/turfcord.jpg" alt="Turfcord" style="min-width: 100%; height: 300px; object-fit: contain;">
-                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/vycvik_jezdce.jpg" alt="Výcvik jezdce" style="min-width: 100%; height: 300px; object-fit: contain;">
-                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/zpusobilost_ridice.jpg" alt="Způsobilost řidiče" style="min-width: 100%; height: 300px; object-fit: contain;">
+                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/certCAAPR.jpg" alt="Diplom fyzioterapie koní CertCAAPR Hana Perutková" style="min-width: 100%; height: 300px; object-fit: contain;">
+                  <img src="public/hana-certifikaty-zasilka-TPINK67YKMFFJJPR/goodsmith.jpg" alt="Goodsmith certifikát" style="min-width: 100%; height: 300px; object-fit: contain;">
                 </div>
-                
-                <!-- Previous Button -->
-                <button id="cert-prev" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">‹</button>
-                
-                <!-- Next Button -->
-                <button id="cert-next" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">›</button>
-              </div>
-              
-              <!-- Dots Indicators -->
-              <div id="cert-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 1rem;">
-                <span class="cert-dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: var(--brand); cursor: pointer;"></span>
-                <span class="cert-dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-                <span class="cert-dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-                <span class="cert-dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-                <span class="cert-dot" data-index="4" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
+                <button id="cert-prev" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;">‹</button>
+                <button id="cert-next" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;">›</button>
               </div>
             </div>
           </div>
@@ -305,110 +230,35 @@
       </div>
     </section>
 
-    <section id="kontakt" class="section" aria-label="Kontakt">
+    <section id="kontakt" class="section">
       <div class="container">
         <h2>Kontakt</h2>
         <div class="grid">
           <div class="card">
-            <h3>Osobní údaje</h3>
-            <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
-              <div style="display: flex; align-items: start; gap: 8px;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 2px; color: var(--brand);">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                  <circle cx="12" cy="7" r="4"/>
-                </svg>
-                <div>
-                  <strong>Hana Perutková</strong>
-                </div>
-              </div>
-              <div style="display: flex; align-items: start; gap: 8px;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 2px; color: var(--brand);">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-                <div class="muted">
-                  Komenského 46<br>
-                  Mimoň, 471 24<br>
-                  Liberecký kraj
-                </div>
-              </div>
-              <div style="display: flex; align-items: start; gap: 8px;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 2px; color: var(--brand);">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/>
-                  <path d="M3 9h18"/>
-                </svg>
-                <div class="muted">
-                  <strong>IČO:</strong> 21291152
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Kontaktní údaje</h3>
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-              <div>
-                <strong>Telefon:</strong><br>
-                <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px; flex-wrap: wrap;">
-                  <a href="tel:+420776245040" style="font-size: 1.1rem;">+420 776 245 040</a>
-                  <button onclick="copyToClipboard('+420776245040', this)" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--brand); background: transparent; color: var(--brand); cursor: pointer; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.background='var(--brand)'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='var(--brand)';">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 4px;">
-                      <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
-                      <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    Kopírovat
-                  </button>
-                </div>
-              </div>
-              <div>
-                <strong>E‑mail:</strong><br>
-                <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px; flex-wrap: wrap;">
-                  <a href="mailto:perutkovah@seznam.cz" style="font-size: 1.1rem;">perutkovah@seznam.cz</a>
-                  <button onclick="copyToClipboard('perutkovah@seznam.cz', this)" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--brand); background: transparent; color: var(--brand); cursor: pointer; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.background='var(--brand)'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='var(--brand)';">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 4px;">
-                      <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
-                      <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    Kopírovat
-                  </button>
-                </div>
-              </div>
-              <div class="muted">
-                <strong>Provozní doba:</strong> dle dohody
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Sociální sítě</h3>
+            <h3>Sídlo</h3>
             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-              <a href="https://www.facebook.com/share/17fGMZWime/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; padding: 8px; border-radius: 8px; transition: all 0.2s ease;" onmouseover="this.style.background='color-mix(in oklab, var(--brand) 10%, transparent)'" onmouseout="this.style.background='transparent'">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: #1877F2;">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-                <span style="font-weight: 500;">Hana Perutková Cert CAAPR</span>
-              </a>
+              <strong>Hana Perutková</strong>
+              <span class="muted">Komenského 46, Mimoň, 471 24</span>
+              <span class="muted">IČO: 21291152</span>
             </div>
-            <p class="muted" style="margin-top: 1rem;">
-              <strong>Certifikace:</strong><br>
-              CertCAAPR - Fyzioterapie koní<br>
-              Dopravce: CZ 51D10045 
-            </p>
+          </div>
+          <div class="card">
+            <h3>Spojení</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <a href="tel:+420776245040" style="font-size: 1.1rem; font-weight: 600;">+420 776 245 040</a>
+              <a href="mailto:perutkovah@seznam.cz">perutkovah@seznam.cz</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Sledujte mě</h3>
+            <a href="https://www.facebook.com/share/17fGMZWime/" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: #1877F2;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Hana Perutková Cert CAAPR</span>
+            </a>
           </div>
         </div>
-        
-        <!-- Google Maps -->
-        <div style="margin-top: 3rem;">
-          <h3 style="margin-bottom: 1rem;">Kde mě najdete</h3>
-          <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 10px 30px -20px rgba(0, 0, 0, .45);">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.8!2d14.7341!3d50.6631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709f2e0a0a0a0a0%3A0xa0a0a0a0a0a0a0a0!2sKomenského 46, 471 24 Mimoň!5e0!3m2!1scs!2scz!4v1234567890"
-              width="100%" 
-              height="400" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+        <div style="margin-top: 3rem; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.463321683419!2d14.722247177041492!3d50.65564897163231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47094600109f6b9b%3A0x6a0c5c36357d39f4!2zS29tZW5za8OpaG8gNDYsIDQ3MSAyNCBNaW1vbg!5e0!3m2!1scs!2scz!4v1710887000000!5m2!1scs!2scz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -416,22 +266,20 @@
 
   <footer class="footer">
     <div class="container">
+      <p style="font-size: 0.7rem; opacity: 0.2; margin-bottom: 1rem; text-align: center;">
+        Služby: Ošetření pohybového aparátu koní, fyzioterapie koní, regenerace a rehabilitace koní, transport zvířat Liberecký kraj.
+      </p>
       <div class="inline-list">
         <span>© <span id="year"></span> Hana Perutková</span>
         <a href="./#top">Nahoru ↑</a>
-        <a href="https://hits.sh/hanaperutkova.cz/">
-          <img alt="Počet návštěv" src="https://hits.sh/hanaperutkova.cz.svg"/>
-        </a>
+        <a href="https://hits.sh/hanaperutkova.cz/"><img alt="Návštěvy" src="https://hits.sh/hanaperutkova.cz.svg?style=flat-square"/></a>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript Modules -->
   <script src="assets/js/theme.js" defer></script>
   <script src="assets/js/navigation.js" defer></script>
   <script src="assets/js/carousel.js" defer></script>
-  <script src="assets/js/lightbox.js" defer></script>
-  <script src="assets/js/contact-highlight.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
