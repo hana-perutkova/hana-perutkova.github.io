@@ -442,14 +442,16 @@ h1 {
         object-fit: contain !important;
     }
 
-    /* Transport Carousel - Mobile Responsive */
-    #transport-carousel img {
+    /* Transport and Treatment Carousels - Mobile Responsive */
+    #transport-carousel img,
+    #treatment-carousel img {
         height: 300px !important;
     }
 }
 
-/* Transport Carousel Images */
-.transport-carousel-img {
+/* Transport and Treatment Carousel Images */
+.transport-carousel-img,
+.treatment-carousel-img {
     height: 650px;
     object-fit: contain !important;
 }
