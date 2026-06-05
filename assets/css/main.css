@@ -450,7 +450,8 @@ h1 {
 
 /* Transport Carousel Images */
 .transport-carousel-img {
-    height: 500px;
+    height: 650px;
+    object-fit: contain !important;
 }
 
 /* About Section Responsive Layout */
