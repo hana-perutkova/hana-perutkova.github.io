@@ -90,3 +90,27 @@ function copyToClipboard(text, button) {
 
 // Make copyToClipboard globally available
 window.copyToClipboard = copyToClipboard;
+
+/**
+ * Swiper Carousel Initialization
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof Swiper !== 'undefined') {
+        const swipers = document.querySelectorAll('.mySwiper');
+        swipers.forEach(swiperEl => {
+            new Swiper(swiperEl, {
+                autoHeight: true,
+                loop: true,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: swiperEl.querySelector('.swiper-button-next'),
+                    prevEl: swiperEl.querySelector('.swiper-button-prev'),
+                },
+                pagination: {
+                    el: swiperEl.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
+            });
+        });
+    }
+});

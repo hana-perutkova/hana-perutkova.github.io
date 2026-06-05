@@ -442,18 +442,18 @@ h1 {
         object-fit: contain !important;
     }
 
-    /* Transport and Treatment Carousels - Mobile Responsive */
-    #transport-carousel img,
-    #treatment-carousel img {
-        height: 300px !important;
+    /* Swiper - Mobile Responsive */
+    .swiper-slide img {
+        height: auto;
     }
 }
 
-/* Transport and Treatment Carousel Images */
-.transport-carousel-img,
-.treatment-carousel-img {
-    height: 650px;
-    object-fit: contain !important;
+/* Swiper Custom Styling */
+.mySwiper {
+    --swiper-pagination-color: var(--brand);
+    --swiper-navigation-color: var(--brand);
+    --swiper-pagination-bullet-inactive-color: var(--muted);
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
 }
 
 /* About Section Responsive Layout */

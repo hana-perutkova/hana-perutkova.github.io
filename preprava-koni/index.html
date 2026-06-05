@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../assets/css/themes.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
   <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script type="application/ld+json">
     {
@@ -210,32 +211,21 @@
         <h2>Fotogalerie z přeprav</h2>
         
         <div style="max-width: 700px; margin: 0 auto; background: var(--card); border-radius: 16px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-          <div id="transport-carousel" class="lightbox-gallery" style="position: relative; overflow: hidden; border-radius: 8px;">
-            <div id="transport-track" style="display: flex; transition: transform 0.4s ease;">
-              <img src="../public/hana-fotky-web/prevoz/20260524_181324.jpg" alt="Profesionální přeprava koní" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/20260524_181518.jpg" alt="Bezpečný transport koní" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/20260524_182046.jpg" alt="Přeprava koní Liberecký kraj" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/20260524_200312.jpg" alt="Klidné nakládání koně do přívěsu" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/DSC_6436.JPG" alt="Cestování s koňmi bez stresu" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/DSC_6473.JPG" alt="Přívěs pro koně Hana Perutková" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/DSC_6713.JPG" alt="Profesionální přepravník na koně" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
-              <img src="../public/hana-fotky-web/prevoz/kun%20v%20hangeri.JPG" alt="Spokojený kůň v přepravníku" class="transport-carousel-img" style="flex: 0 0 100%; object-fit: cover;">
+          <div class="swiper mySwiper" style="border-radius: 8px;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/20260524_181324.jpg" alt="Profesionální přeprava koní" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/20260524_181518.jpg" alt="Bezpečný transport koní" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/20260524_182046.jpg" alt="Přeprava koní Liberecký kraj" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/20260524_200312.jpg" alt="Klidné nakládání koně do přívěsu" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/DSC_6436.JPG" alt="Cestování s koňmi bez stresu" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/DSC_6473.JPG" alt="Přívěs pro koně Hana Perutková" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/DSC_6713.JPG" alt="Profesionální přepravník na koně" style="width: 100%; height: auto; border-radius: 8px;"></div>
+              <div class="swiper-slide"><img src="../public/hana-fotky-web/prevoz/kun%20v%20hangeri.JPG" alt="Spokojený kůň v přepravníku" style="width: 100%; height: auto; border-radius: 8px;"></div>
             </div>
             
-            <button id="transport-prev" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">‹</button>
-            
-            <button id="transport-next" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center;">›</button>
-          </div>
-          
-          <div id="transport-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 1rem;">
-            <span class="transport-dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: var(--brand); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="4" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="5" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="6" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
-            <span class="transport-dot" data-index="7" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
+            <div class="swiper-button-next" style="color: var(--brand);"></div>
+            <div class="swiper-button-prev" style="color: var(--brand);"></div>
+            <div class="swiper-pagination" style="position: relative; margin-top: 1rem;"></div>
           </div>
         </div>
       </div>
@@ -302,7 +292,7 @@
 
   <script src="../assets/js/theme.js" defer></script>
   <script src="../assets/js/navigation.js" defer></script>
-  <script src="../assets/js/carousel.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="../assets/js/lightbox.js" defer></script>
   <script src="../assets/js/contact-highlight.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
