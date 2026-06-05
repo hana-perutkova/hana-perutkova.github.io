@@ -443,6 +443,44 @@ h1 {
   }
 }
 
+/* O mně: dvousloupcový grid (text + fotky/carousel) */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* default align-items: stretch — pravý sloupec se natáhne na výšku levého,
+     takže sticky carousel uvnitř má prostor kam cestovat */
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pravý sloupec s fotkou a certifikáty */
+.about-photos {
+  display: block;
+  /* Sloupec musí mít plnou výšku levého sloupce, to zajistí grid na rodiči (align-items: stretch).
+     Jako block se .about-carousel-item nenatahuje a může cestovat dolů. */
+}
+
+.about-carousel-item {
+  position: sticky;
+  top: 80px; /* pod navbar */
+  transition: box-shadow 0.3s ease;
+}
+
+.about-carousel-item.is-stuck {
+  box-shadow: 0 8px 32px -8px rgba(78, 205, 196, 0.25);
+}
+
+@media (max-width: 900px) {
+  .about-carousel-item {
+    position: static; /* na mobilu sticky nedává smysl */
+  }
+}
+
 .about .photo {
   border-radius: 18px;
   background: linear-gradient(135deg, color-mix(in oklab, var(--brand) 20%, transparent), transparent);

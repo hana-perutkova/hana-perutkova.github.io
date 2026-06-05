@@ -285,7 +285,7 @@
               <img src="public/hana-fotky-web/Hana.png" alt="Hana Perutková - fyzioterapie koní a ošetření pohybového aparátu v Libereckém kraji" style="width: 100%; object-fit: contain; border-radius: 20px; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.2);">
             </div>
             
-            <div class="about-carousel-item" style="position: relative; background: var(--card); border-radius: 12px; padding: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <div class="about-carousel-item" id="cert-sticky-wrap" style="background: var(--card); border-radius: 12px; padding: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
               <p style="text-align: center; margin-bottom: 1rem; font-weight: 600;">Certifikáty</p>
               
               <div id="cert-carousel" style="position: relative; overflow: hidden; border-radius: 8px;">
@@ -320,6 +320,10 @@
                 <span class="cert-dot" data-index="8" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
                 <span class="cert-dot" data-index="9" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
                 <span class="cert-dot" data-index="10" style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); cursor: pointer;"></span>
+              </div>
+              
+              <div style="margin-top: 2rem; border-top: 1px solid color-mix(in oklab, var(--muted) 20%, transparent); padding-top: 1.5rem;">
+                <img src="public/vtip.jpg" alt="Vtip" style="width: 100%; border-radius: 8px; object-fit: contain;">
               </div>
             </div>
           </div>
@@ -456,5 +460,32 @@
   <script src="assets/js/lightbox.js" defer></script>
   <script src="assets/js/contact-highlight.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script>
+    // Sticky carousel: přidáme třídu is-stuck když se carousel přichytí k viewportu
+    (function () {
+      var sentinel = document.createElement('div');
+      sentinel.id = 'cert-sticky-sentinel';
+      sentinel.style.cssText = 'position:absolute;top:0;left:0;height:1px;width:1px;pointer-events:none;visibility:hidden;';
+
+      var wrap = document.getElementById('cert-sticky-wrap');
+      if (!wrap) return;
+
+      var parent = wrap.parentElement;
+      if (parent) parent.style.position = 'relative';
+
+      wrap.parentElement.insertBefore(sentinel, wrap);
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            wrap.classList.toggle('is-stuck', !entry.isIntersecting);
+          });
+        },
+        { threshold: 0, rootMargin: '-80px 0px 0px 0px' }
+      );
+
+      observer.observe(sentinel);
+    })();
+  </script>
 </body>
 </html>
